@@ -23,7 +23,6 @@ public class Test1 extends SeleneseTestBase{
         driver = new FirefoxDriver();
         driver.get("http://google.com");
         wait = new WebDriverWait(driver, 30);
-
     }
 
     @After
@@ -39,6 +38,7 @@ public class Test1 extends SeleneseTestBase{
         waitForResults();
 
         assertThat(driver.findElement(By.partialLinkText("Oleksandr Andriiets")), is(notNullValue()));
+        assertThat(true, is(true));
     }
 
     private void waitForResults() {
