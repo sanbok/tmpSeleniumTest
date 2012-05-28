@@ -38,6 +38,7 @@ public class Test1 extends SeleneseTestBase{
         waitForResults();
 
         assertThat(driver.findElement(By.partialLinkText("Oleksandr Andriiets")), is(notNullValue()));
+        assertThat(driver.findElement(By.partialLinkText("Oleksandr Andriiets")), is(notNullValue()));
     }
 
     private void waitForResults() {
