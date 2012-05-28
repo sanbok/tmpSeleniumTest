@@ -23,6 +23,7 @@ public class Test1 extends SeleneseTestBase{
         driver = new FirefoxDriver();
         driver.get("http://google.com");
         wait = new WebDriverWait(driver, 30);
+
     }
 
     @After
